@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.project-card.dark-mode {
+  background-color: #444;
+}
