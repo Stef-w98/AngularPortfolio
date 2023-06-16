@@ -122,14 +122,19 @@ h2 {
   opacity: 0.8;
 }
 
+#typewriter-container {
+  height: 4rem; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
 #typewriter {
   color: #fff;
   overflow: hidden;
   border-right: 0.15em solid #fff;
   white-space: nowrap;
   margin: 0;
-  width: 0;
-  animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+  width: 14em; /* Adjust the width as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.5s step-end infinite;
 }
 
 @keyframes typing {
