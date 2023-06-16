@@ -1,11 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
-export class HomepageComponent {
+export class HomepageComponent implements AfterViewInit {
+  @ViewChild('typewriter', { static: true }) typewriterRef!: ElementRef;
+  public typingText: string = '';
+
+  ngAfterViewInit(): void {
+    this.startTypingAnimation();
+  }
+
+  startTypingAnimation(): void {
+    const text = "Hi, I'm Stef Wouters";
+    let index = 0;
+
+    const typeNextCharacter = () => {
+      if (index < text.length) {
+        this.typingText += text.charAt(index);
+        index++;
+        this.typewriterRef.nativeElement.innerText = this.typingText;
+        setTimeout(typeNextCharacter, 100);
+      }
+    };
+
+    typeNextCharacter();
+  }
+
   navigateToProjectPage(projectName: string) {
     // Add your navigation logic here
   }

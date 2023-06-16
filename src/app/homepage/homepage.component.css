@@ -46,8 +46,6 @@ h2 {
   height: 100%;
 }
 
-
-
 .project-overlay {
   position: absolute;
   bottom: 0;
@@ -72,33 +70,39 @@ h2 {
 
 #home {
   background-color: #222;
-  padding: 100px 0;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  padding: 200px 0;
 }
 
-#home h1 {
+#home .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+#home .intro-content {
+  text-align: left;
+}
+
+#home .intro-content h1 {
   font-size: 48px;
   font-weight: 700;
+  color: #fff;
   margin-bottom: 10px;
-  line-height: 1.2;
 }
 
-#home h2 {
-  font-size: 24px;
-  font-weight: 400;
+#home .intro-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
   margin-bottom: 20px;
-  opacity: 0.8;
 }
 
-#home p {
+#home .intro-content p {
   font-size: 18px;
+  color: #fff;
   margin-bottom: 30px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.8;
 }
 
 #home .intro-button {
@@ -116,5 +120,34 @@ h2 {
 #home .intro-button:hover {
   background-color: #fff;
   opacity: 0.8;
+}
+
+#typewriter {
+  color: #fff;
+  overflow: hidden;
+  border-right: 0.15em solid #fff;
+  white-space: nowrap;
+  margin: 0;
+  width: 0;
+  animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
 }
 
