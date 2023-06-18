@@ -23,7 +23,7 @@ export class HomepageComponent implements AfterViewInit {
       "你好，我是Stef Wouters",
       "Bonjour, je suis Stef Wouters"
     ];
-    let textIndex = 0;
+    let textIndex:number = 0;
     let charIndex = 0;
     let isDeleting = false;
     let delay = 100; // Delay between typing/deleting each character
