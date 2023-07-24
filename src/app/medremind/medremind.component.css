@@ -114,6 +114,10 @@
   margin-right: 2rem;
 }
 
+::ng-deep .project-section[_ngcontent-ng-c458713826] img[_ngcontent-ng-c458713826] {
+  width: 30% !important;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
