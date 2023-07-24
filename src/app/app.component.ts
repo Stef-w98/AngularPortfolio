@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupComponent } from './popup/popup.component';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,17 @@ import { Component } from '@angular/core';
   `,
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'AngularPortfolio';
+export class AppComponent implements OnInit {
+  constructor(private dialog: MatDialog) {}
+
+  ngOnInit(): void {
+    this.openPopup();
+  }
+
+  openPopup(): void {
+    const dialogRef = this.dialog.open(PopupComponent, {
+      disableClose: true,
+      width: '400px' // Adjust the width as needed
+    });
+  }
 }
