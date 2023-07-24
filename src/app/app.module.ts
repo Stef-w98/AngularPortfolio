@@ -10,7 +10,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { PopupComponent } from './popup/popup.component'; // Add this line
+import { PopupComponent } from './popup/popup.component';
+import { MedremindComponent } from './medremind/medremind.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PopupComponent } from './popup/popup.component'; // Add this line
     NavbarComponent,
     AboutComponent,
     ProjectsComponent,
-    PopupComponent // Add this line
+    PopupComponent,
+    MedremindComponent
   ],
   imports: [
     BrowserModule,

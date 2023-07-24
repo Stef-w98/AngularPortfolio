@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -6,8 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
+  constructor(private router: Router) {}
+
   navigateToProjectPage(projectName: string) {
-    // Add your navigation logic here
+    // Use the Angular Router to navigate to the corresponding project page
+    this.router.navigate(['projects', projectName]);
   }
 
   getProjectImage(title: string): string {

@@ -1,0 +1,111 @@
+<!-- project.component.html -->
+<section class="project-page">
+  <div class="container">
+    <div class="project-header">
+      <h1 class="project-title">MedRemind</h1>
+      <p class="project-description">
+        MedRemind is a mobile application that provides timely medication reminders to users. <br>
+        It is built using Flutter and Dart, making it a cross-platform solution for Android and iOS. <br>
+        The app utilizes Supabase as its database, leveraging PostgreSQL for data management.
+      </p>
+    </div>
+
+    <div class="project-images">
+      <img src="assets/MedRemind.png" alt="MedRemind Screenshot 1">
+      <img src="assets/MedRemind.png" alt="MedRemind Screenshot 2">
+    </div>
+
+    <div class="project-details">
+      <h2>Key Features:</h2>
+      <ul>
+        <li><span class="bullet-point"></span>Customizable Medication Schedules</li>
+        <li><span class="bullet-point"></span>Timely Reminders and Alerts</li>
+        <li><span class="bullet-point"></span>Medication Dosage Tracking</li>
+        <li><span class="bullet-point"></span>Medication Image Upload</li>
+        <li><span class="bullet-point"></span>Inventory Overview</li>
+        <li><span class="bullet-point"></span>Secure Login with Google, Facebook, and GitHub</li>
+        <li><span class="bullet-point"></span>Intuitive User Interface</li>
+      </ul>
+
+      <h2>Technologies Used:</h2>
+      <ul>
+        <li><span class="bullet-point"></span>Flutter and Dart</li>
+        <li><span class="bullet-point"></span>Supabase (PostgreSQL)</li>
+      </ul>
+    </div>
+
+    <div class="project-links">
+      <a class="margin-r-s" href="#" target="_blank">GitHub Repository</a>
+      <a href="#" target="_blank">Youtube Demo</a>
+    </div>
+
+    <div class="project-section">
+      <h2>How It Works:</h2>
+      <p>When you open the app for the first time, you'll need to create an account.<br>
+        This can be done manually with your email address
+        or you can quickly log in with Google, Facebook, or GitHub.
+        <br><br>
+        Once logged in, you can set up your profile and start using the app.<br>
+        Add new medication and attach an image to easily identify each pill.
+        <br><br>
+        After setting up your inventory, you can start creating reminders.<br>
+        Choose specific days and times using the fancy time picker, or select a date range for medications that need to be taken over a period.<br>
+        Need a one-time reminder? No problem. We have a button for that.
+        <br><br>
+        The overview page shows the medication you need to take today.<br>
+        Confirm the medication at the overview page (confirmation resets after midnight if the reminder repeats).<br>
+        Can't take the medication immediately? No worries, you can add a 30-minute delay to receive a reminder later.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>User Interface:</h2>
+      <p>The app's user interface is designed with a focus on user-friendliness, catering to people of various age groups.<br>
+        Extensive testing was conducted, involving individuals between the ages of 20 and 75, to ensure that everyone can comfortably navigate and utilize the application.
+        <br><br>
+        To address the needs of older users who may have multiple medications to manage, we implemented a thoughtful feature.<br>
+        Users can easily add images of their medications, whether from their gallery or taken at the moment.<br>
+        This visual aid assists in identifying the correct medication, reducing any confusion.
+        <br><br>
+        Additionally, we included a helpful threshold notification system. When medication is running low, the app will provide a warning, prompting users to take timely action.
+        <br><br>
+        The main color scheme adopts a medical blue/grey theme, making it distinctively recognizable as a medical app.<br>
+        Upon opening the app, users are greeted with an intuitive home screen that displays a comprehensive overview of the medications they need to take on that day.<br>
+        Quick accessibility is ensured through a bottom navigation bar, granting swift access to essential features.<br>
+        Furthermore, the hamburger menu provides easy access to the settings page, logout functionality, and leaves room for future expansions.
+      </p>
+      <div class="project-images">
+        <img src="assets/MedRemind.png" alt="MedRemind UI Screenshot 1">
+        <img src="assets/MedRemind.png" alt="MedRemind UI Screenshot 2">
+        <img src="assets/MedRemind.png" alt="MedRemind UI Screenshot 3">
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2>Database Management:</h2>
+      <p>MedRemind utilizes Supabase, a versatile platform that facilitates seamless integration of database, image storage (storage bucket), and social media login functionalities.<br>
+        With Supabase's database feature, we efficiently manage and access user data using standard SQL queries, ensuring a smooth user experience.
+      <br><br>
+      To enhance user interaction, MedRemind leverages Supabase's image storage feature to securely store and retrieve medication images.<br>
+        This allows users to add custom images for their medications, making it easier to identify and take the right pills at the right time.<br>
+        The images are stored under the users map with the users UID, using row-level security (RLS) to ensure that only the right users can access the images.
+        <br><br>
+      Additionally, Supabase's social media login integration empowers MedRemind users to quickly log in using their existing Google, Facebook, or GitHub accounts.<br>
+        This eliminates the need for creating new credentials, simplifying the onboarding process and enhancing user engagement.</p>
+    </div>
+
+    <div class="project-section">
+      <h2>Future Plans</h2>
+      <p>As we continue to evolve MedRemind, we have exciting future plans to further enhance the app's capabilities and user experience.<br>
+        Our vision includes the integration of additional health tracking features, such as Temperature, Weight, Saturation, Heartrate, and more.<br>
+        These new pages will allow users to conveniently record and monitor their vital health metrics on a daily basis, empowering them to take charge of their well-being and make informed health decisions.
+        <br><br>
+      In addition to the health tracking functionalities, we are eager to implement intuitive charts and data visualization tools.<br>
+        These charts will provide users with insightful visual representations of their health progress over time, helping them identify trends and patterns in their medication adherence and overall health management.
+        <br><br>
+      With these ambitious future plans, MedRemind will continue to evolve as a comprehensive health management platform, offering users a holistic solution for medication reminders and health tracking.<br>
+        Our goal is to empower users with the tools they need to lead healthier and more organized lives, ensuring that they never miss a dose and stay on top of their health journey.</p>
+    </div>
+
+  </div>
+</section>

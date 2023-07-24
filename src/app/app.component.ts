@@ -16,13 +16,13 @@ export class AppComponent implements OnInit {
   constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {
-    this.openPopup();
+    /*this.openPopup();*/
   }
 
-  openPopup(): void {
+  /*openPopup(): void {
     const dialogRef = this.dialog.open(PopupComponent, {
       disableClose: true,
       width: '400px' // Adjust the width as needed
     });
-  }
+  }*/
 }
