@@ -1,0 +1,43 @@
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="row">
+      <div class="column">
+        <div class="project-card" (click)="navigateToProjectPage('MedRemind')">
+          <div class="project-image" [style.background-image]="'url(' + getProjectImage('MedRemind | Flutter/Dart') + ')'" ></div>
+          <div class="project-overlay">
+            <h3>MedRemind | Flutter/Dart</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="project-card" (click)="navigateToProjectPage('Checkpoint')">
+          <div class="project-image" [style.background-image]="'url(' + getProjectImage('Checkpoint | Flutter/Dart') + ')'" ></div>
+          <div class="project-overlay">
+            <h3>CheckPoint | Flutter/Dart</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="project-card" (click)="navigateToProjectPage('Vlaai')">
+          <div class="project-image" [style.background-image]="'url(' + getProjectImage('Vlaai.be | ASP.NET') + ')'" ></div>
+          <div class="project-overlay">
+            <h3>Vlaai.be | ASP.NET</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="project-card" (click)="navigateToProjectPage('Boekers')">
+          <div class="project-image" [style.background-image]="'url(' + getProjectImage('Galgje | C# WPF') + ')'" ></div>
+          <div class="project-overlay">
+            <h3>Galgje | C# WPF</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
