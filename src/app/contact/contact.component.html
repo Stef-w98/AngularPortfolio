@@ -1,30 +1,36 @@
-<!-- contact.component.html -->
 <div class="page-container">
   <section class="contact-page">
     <div class="container">
       <div class="contact-info">
         <h2>Contact Information</h2>
-        <p>Email: stef.wouters22@gmail.com</p>
-        <p>Address: Lummen, Belgium</p>
+        <p>Email: example@example.com</p>
+        <p>Phone: +1234567890</p>
+        <p>Address: 123 Street, City, Country</p>
       </div>
       <div class="contact-form-container">
         <h2>Contact Me</h2>
-        <form netlify name="contactForm" class="contact-form" method="POST">
+        <form name="contact" method="POST" data-netlify="true" #contactForm="ngForm" (ngSubmit)="onSubmit()" class="contact-form" novalidate>
           <div class="form-group">
-            <label for="name">Name<span id="name-required" class="required hidden">*</span>:</label>
-            <input type="text" id="name" name="name" required placeholder="Jhon Doe">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="contactModel.name" required>
+            <div *ngIf="contactForm.submitted && contactForm.controls['name'].invalid" class="feedback">Name is required.</div>
           </div>
           <div class="form-group">
-            <label for="email">Email<span id="email-required" class="required hidden">*</span>:</label>
-            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="contactModel.email" required email>
+            <div *ngIf="contactForm.submitted && contactForm.controls['email'].invalid" class="feedback">
+              <div *ngIf="contactForm.controls['email'].hasError('required')">Email is required.</div>
+              <div *ngIf="contactForm.controls['email'].hasError('email')">Please enter a valid email address.</div>
+            </div>
           </div>
           <div class="form-group">
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="+1234567890">
+            <input type="tel" id="phone" name="phone" [(ngModel)]="contactModel.phone">
           </div>
           <div class="form-group">
-            <label for="message">Message<span id="message-required" class="required hidden">*</span>:</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" [(ngModel)]="contactModel.message" required></textarea>
+            <div *ngIf="contactForm.submitted && contactForm.controls['message'].invalid" class="feedback">Message is required.</div>
           </div>
           <button type="submit" class="submit-button">Submit</button>
         </form>
