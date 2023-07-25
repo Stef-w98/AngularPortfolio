@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-homepage',
@@ -56,5 +57,12 @@ export class HomepageComponent implements AfterViewInit {
     };
 
     typeNextCharacter();
+  }
+
+    protected readonly navigator = navigator;
+  constructor(private router: Router) {}
+
+  goToProjectsPage() {
+    this.router.navigate(['/projects']);
   }
 }

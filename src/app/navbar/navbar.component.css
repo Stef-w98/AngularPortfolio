@@ -20,7 +20,7 @@
 }
 
 .logo-text {
-  margin-left: 10px; /* Adjust the margin as per your requirements */
+  margin-left: 10px;
 }
 
 .navbar-link:not(:last-child)::after {

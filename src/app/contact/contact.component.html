@@ -1,0 +1,34 @@
+<!-- contact.component.html -->
+<div class="page-container">
+  <section class="contact-page">
+    <div class="container">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: stef.wouters22@gmail.com</p>
+        <p>Address: Lummen, Belgium</p>
+      </div>
+      <div class="contact-form-container">
+        <h2>Contact Me</h2>
+        <form netlify name="contactForm" class="contact-form" method="POST" onsubmit="return validateForm(event)">
+          <div class="form-group">
+            <label for="name">Name<span id="name-required" class="required hidden">*</span>:</label>
+            <input type="text" id="name" name="name" required placeholder="Jhon Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Email<span id="email-required" class="required hidden">*</span>:</label>
+            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1234567890">
+          </div>
+          <div class="form-group">
+            <label for="message">Message<span id="message-required" class="required hidden">*</span>:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>

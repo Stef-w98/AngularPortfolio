@@ -115,6 +115,7 @@ h2 {
   color: #222;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 #home .intro-button:hover {

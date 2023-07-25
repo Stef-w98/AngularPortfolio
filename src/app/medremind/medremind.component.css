@@ -1,4 +1,163 @@
 /* project.component.css */
+
+/* General Styles */
+.project-page {
+  padding: 50px;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.project-description {
+  font-size: 18px;
+  color: white;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-links a:hover {
+  background-color: #45A049;
+}
+
+/* Image Styles */
+.project-images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.project-images img {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-images img:hover {
+  transform: scale(1.1);
+}
+
+.project-images-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.project-images-close img {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-images-close img:hover {
+  transform: scale(1.1);
+}
+
+/* Project Details Styles */
+.project-details {
+  margin-bottom: 30px;
+}
+
+.project-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.project-details ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.project-details li {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Project Section Styles */
+.project-section {
+  margin-bottom: 30px;
+}
+
+.project-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.project-section p {
+  font-size: 18px;
+  color: white;
+}
+
+.project-section img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Custom Styles */
+.bullet-point {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.margin-r-s {
+  margin-right: 2rem;
+}
+
+::ng-deep .project-section[_ngcontent-ng-c4055462013] img[_ngcontent-ng-c4055462013] {
+  width: 25% !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*
+!* project.component.css *!
 .project-page {
   padding: 50px;
 }
@@ -148,3 +307,4 @@
     transform: translateY(0);
   }
 }
+*/

@@ -1,0 +1,105 @@
+/* contact.component.css */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh; /* Set height to the full viewport height */
+}
+
+.contact-page {
+  padding: 50px;
+  margin-top: 50px; /* Adjust this value as needed for the desired vertical position */
+}
+
+.container {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-form-container {
+  flex: 1;
+  border-left: 2px solid #4CAF50; /* Your signature green color */
+  padding-left: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  font-weight: bold;
+}
+
+label .required {
+  color: #e32;
+  margin-left: 3px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  resize: none;;
+}
+
+input:focus,
+textarea:focus {
+  outline: none; /* Remove focus outline */
+  border-bottom: 2px solid #4CAF50; /* Green bottom line on focus */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888; /* More grey color for the hint text */
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px; /* Slightly bigger padding */
+  border: none;
+  border-radius: 6px; /* Slightly bigger border radius */
+  cursor: pointer;
+  font-size: 20px; /* Slightly bigger font size */
+  margin-top: 20px; /* Add margin top to separate from form fields */
+  align-self: center; /* Center the button within the form */
+}
+
+.submit-button:hover {
+  background-color: #45A049;
+}
+
+/* CSS to hide the required star by default */
+.hidden {
+  display: none;
+}
