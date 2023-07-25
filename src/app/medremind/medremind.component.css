@@ -95,7 +95,6 @@
   background-color: #45A049;
 }
 
-/* Additional Sections */
 .project-section {
   margin-bottom: 30px;
 }
@@ -135,8 +134,8 @@
   margin-right: 2rem;
 }
 
-::ng-deep .project-section[_ngcontent-ng-c458713826] img[_ngcontent-ng-c458713826] {
-  width: 30% !important;
+::ng-deep .project-section[_ngcontent-ng-c4055462013] img[_ngcontent-ng-c4055462013] {
+  width: 25% !important;
 }
 
 @keyframes fadeIn {
