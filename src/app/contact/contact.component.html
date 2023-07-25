@@ -8,7 +8,7 @@
       </div>
       <div class="contact-form-container">
         <h2>Contact Me</h2>
-        <form name="contact" method="POST" data-netlify="true" #contactForm="ngForm" (ngSubmit)="onSubmit()" class="contact-form" novalidate>
+        <form netlify name="contact" method="POST" data-netlify="true" #contactForm="ngForm" (ngSubmit)="onSubmit()" class="contact-form" novalidate>
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" [(ngModel)]="contactModel.name" required>
