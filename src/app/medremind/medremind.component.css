@@ -26,6 +26,13 @@
   margin: 30px 0;
 }
 
+.project-images-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
 .project-images img {
   width: 300px;
   height: auto;
@@ -35,6 +42,20 @@
 }
 
 .project-images img:hover {
+  transform: scale(1.1);
+}
+
+.project-images-close img {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-images-close img:hover {
   transform: scale(1.1);
 }
 
