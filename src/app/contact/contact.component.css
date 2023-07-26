@@ -186,3 +186,61 @@ textarea {
 .submit-button:hover {
   background-color: #45a049;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .page-container {
+    padding-top: 5%; /* Adjust padding to move the form further down */
+  }
+
+  .container {
+    flex-direction: column; /* Stack the contact info and form vertically */
+    padding: 28px;
+  }
+
+  .contact-info h2,
+  .contact-form-container h2 {
+    font-size: 20px; /* Decrease font size for mobile */
+  }
+
+  .contact-info p {
+    margin-bottom: 5px; /* Decrease margin for mobile */
+  }
+
+  .form-group {
+    margin-bottom: 10px; /* Decrease margin for mobile */
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px; /* Decrease font size for mobile */
+  }
+
+  .form-group .inline {
+    width: 100%; /* Set first name and last name fields to full width on mobile */
+  }
+
+  .name {
+    margin-right: 0; /* Remove margin between first name and last name fields on mobile */
+  }
+
+  .work-in-progress-banner {
+    font-size: 16px; /* Decrease the font size for a smaller banner on mobile */
+    padding: 10px; /* Decrease the padding for a smaller banner on mobile */
+    width: 100%; /* Set banner width to full width on mobile */
+    position: relative; /* Remove absolute positioning */
+    top: 14rem; /* Adjust the distance from the top on mobile */
+    right: 0; /* Adjust the distance from the right on mobile */
+  }
+
+  .social-buttons {
+    margin-bottom: 4rem; /* Add margin under the social media buttons on mobile */
+  }
+
+  .button-container {
+    text-align: center;
+    margin-top: 10px; /* Add margin to separate the submit button from the form */
+  }
+}
