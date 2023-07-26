@@ -144,3 +144,22 @@ i {
 .website-button:hover {
   background-color: #45a049;
 }
+
+@media (max-width: 767px) {
+  /* ... Your existing media query styles ... */
+
+  .box{
+    width: 120%;
+  }
+
+  .listcenter {
+    /* Remove or adjust the width property */
+    width: 100%; /* Uncomment this line to make it take the full width */
+    padding: 0 20px; /* Add some padding to the sides */
+    margin: 0 auto;
+  }
+
+  .points {
+    margin-right: 10%; /* Adjust the margin-right value to fit the circles within the container */
+  }
+}
