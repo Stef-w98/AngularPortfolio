@@ -212,3 +212,102 @@ h2 {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Your existing CSS styles here */
+
+/* Add a media query for screen widths up to 767px (typical for smartphones) */
+@media (max-width: 767px) {
+  #home {
+    padding: 50px 0; /* Reduce the padding on smaller screens */
+  }
+
+  .container {
+    padding: 20px; /* Reduce the padding on smaller screens */
+  }
+
+  .row {
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  }
+
+  .column {
+    width: 100%; /* Make columns take the full width on smaller screens */
+  }
+
+  h2 {
+    font-size: 28px; /* Reduce font size for headings on smaller screens */
+  }
+
+  .intro-content h1 {
+    font-size: 36px; /* Adjust font size for headings on smaller screens */
+  }
+
+  .intro-content h2 {
+    font-size: 24px; /* Adjust font size for headings on smaller screens */
+  }
+
+  .intro-content p {
+    font-size: 16px; /* Adjust font size for paragraphs on smaller screens */
+    max-width: 100%; /* Allow paragraphs to take full width on smaller screens */
+  }
+
+  #typewriter-container {
+    height: 4rem; /* Set a fixed height for the typewriter container */
+    width: 24rem;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    display: flex; /* Use flex to keep typewriter centered */
+    align-items: center; /* Center typewriter vertically */
+  }
+
+  #typewriter {
+    width: 100%; /* Make the typewriter span take full width on smaller screens */
+    display: none; /* Hide the typewriter on mobile */
+  }
+
+  /* Additional styles for the static text message on mobile */
+  #typewriter-container::before {
+    content: "Hello, I'm Stef Wouters"; /* Set the static text */
+    display: block;
+    font-size: 30px;
+  }
+}
+
+/* Add a media query for screen widths above 767px (desktop) */
+@media (min-width: 768px) {
+  #typewriter-container {
+    height: auto; /* Remove fixed height on desktop */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    display: flex; /* Use flex to keep typewriter centered */
+    align-items: center; /* Center typewriter vertically */
+  }
+
+  #typewriter {
+    width: 100%; /* Make the typewriter span take full width on desktop */
+    white-space: nowrap; /* Prevent typewriter content from wrapping */
+    animation: typing 5s steps(40, end), blink-caret 0.5s step-end infinite;
+    animation-fill-mode: both;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
+  }
+
+  /* Hide the static text on desktop */
+  #typewriter-container::before {
+    display: none;
+  }
+}
