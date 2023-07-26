@@ -75,3 +75,17 @@
   }
 }
 
+@media (max-width: 767px) {
+  .title {
+    font-size: 20px; /* Further decrease font size for smaller mobile screens */
+  }
+
+  .loader {
+    width: 50px; /* Adjust loader size for smaller mobile screens */
+    height: 50px;
+  }
+
+  .subtitle {
+    font-size: 14px; /* Further decrease font size for smaller mobile screens */
+  }
+}

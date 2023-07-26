@@ -16,9 +16,7 @@ export class AppComponent implements OnInit {
   constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {
-/*
     this.openPopup();
-*/
   }
 
   openPopup(): void {
