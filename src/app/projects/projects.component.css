@@ -165,7 +165,6 @@ h2 {
   #projects {
     padding: 0px;
     margin: 0;
-    justify-content: center;
   }
 
   .container {
@@ -173,8 +172,9 @@ h2 {
   }
 
   .row {
-    flex-wrap: wrap;
-    justify-content: center; /* Center the project cards on smaller screens */
+    display: unset;
+    flex-wrap: unset;
+    justify-content: unset; /* Center the project cards on smaller screens */
   }
 
   .column {
@@ -198,6 +198,6 @@ h2 {
 
   /* Center the project cards on smaller screens */
   .project-card {
-    margin: 0 auto;
+    margin: 0;
   }
 }
