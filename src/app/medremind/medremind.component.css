@@ -154,157 +154,92 @@
     transform: translateY(0);
   }
 }
-
-
-/*
-!* project.component.css *!
+/* General Styles */
 .project-page {
-  padding: 50px;
-}
-
-.project-header {
-  text-align: center;
-  margin-bottom: 30px;
+  padding: 20px; /* Decrease padding for mobile */
 }
 
 .project-title {
-  font-size: 36px;
-  font-weight: bold;
-  color: #4CAF50;
+  font-size: 24px; /* Decrease font size for mobile */
 }
 
 .project-description {
-  font-size: 18px;
-  color: white;
+  font-size: 16px; /* Decrease font size for mobile */
 }
 
-.project-images {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 30px 0;
-}
-
+.project-images,
 .project-images-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0;
+  flex-direction: column; /* Stack the images vertically on mobile */
 }
 
-.project-images img {
-  width: 300px;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-images img:hover {
-  transform: scale(1.1);
-}
-
+.project-images img,
 .project-images-close img {
-  width: 300px;
-  height: auto;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-images-close img:hover {
-  transform: scale(1.1);
-}
-
-.project-details {
-  margin-bottom: 30px;
-}
-
-.project-details h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #4CAF50;
-}
-
-.project-details ul {
-  list-style: none;
-  padding-left: 20px;
-}
-
-.project-details li {
-  font-size: 18px;
-  color: white;
-  margin-bottom: 10px;
+  width: 100%; /* Set the image width to 100% on mobile */
+  max-width: 300px; /* Limit the max-width of the images on mobile */
+  margin: 10px 0; /* Add margin between images on mobile */
 }
 
 .project-links a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 18px;
-  transition: background-color 0.3s ease-in-out;
+  font-size: 16px; /* Decrease font size for mobile */
 }
 
-.project-links a:hover {
-  background-color: #45A049;
-}
-
-.project-section {
-  margin-bottom: 30px;
+.project-details h2,
+.project-details li {
+  font-size: 20px; /* Decrease font size for mobile */
 }
 
 .project-section h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #4CAF50;
-  margin-bottom: 10px;
+  font-size: 20px; /* Decrease font size for mobile */
 }
 
 .project-section p {
-  font-size: 18px;
-  color: white;
+  font-size: 16px; /* Decrease font size for mobile */
 }
 
-.project-section img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin: 20px 0;
-  animation: fadeIn 1s ease-in-out;
+/* Custom Styles */
+.project-images-close {
+  align-items: flex-start; /* Align images to the left on mobile */
 }
 
-.bullet-point {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background-color: #4CAF50;
-  border-radius: 50%;
-  margin-right: 10px;
+.margin-r-s {
+  margin-right: 0; /* Remove margin on mobile */
 }
 
-.margin-r-s{
-  margin-right: 2rem;
-}
-
-::ng-deep .project-section[_ngcontent-ng-c4055462013] img[_ngcontent-ng-c4055462013] {
-  width: 25% !important;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .project-images,
+  .project-images-close {
+    justify-content: center; /* Center the images horizontally on mobile */
+    align-items: center; /* Center the images vertically on mobile */
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .project-images img,
+  .project-images-close img {
+    max-width: 80%; /* Adjust the max-width of the images for mobile */
+  }
+
+  .bigger{
+    width: 80%;
+  }
+
+  .project-links a {
+    margin-bottom: 10px; /* Add margin under the links on mobile */
+  }
+
+  .project-details h2,
+  .project-details li {
+    font-size: 18px; /* Decrease font size for smaller mobile screens */
+  }
+
+  .project-section h2 {
+    font-size: 18px; /* Decrease font size for smaller mobile screens */
+  }
+
+  .project-section p {
+    font-size: 16px; /* Keep the font size the same for smaller mobile screens */
+  }
+
+  .project-section img {
+    max-width: 100%; /* Adjust the max-width of the images for mobile */
   }
 }
-*/
