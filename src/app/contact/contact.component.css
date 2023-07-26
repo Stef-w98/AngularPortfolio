@@ -1,109 +1,134 @@
+/* Reset some default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
 .page-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 100vh; /* Set height to the full viewport height */
-}
-
-.contact-page {
-  padding: 50px;
-  margin-top: 50px; /* Adjust this value as needed for the desired vertical position */
+  align-items: center;
+  padding-top: 3%; /* Added padding to move the form up */
 }
 
 .container {
-  max-width: 800px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  width: 140%;
+  padding: 20px;
+  margin: 0 auto;
+  transform: translateX(-20%);
 }
 
 .contact-info {
   flex: 1;
-  padding-right: 30px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info h2 {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
 }
 
 .contact-form-container {
   flex: 1;
-  border-left: 2px solid #4CAF50; /* Your signature green color */
-  padding-left: 30px;
-  text-align: center;
+  border-left: 2px solid #4CAF50;
+  padding-left: 20px;
+  margin-left: 20px;
 }
 
-h2 {
-  font-size: 28px;
+.contact-form-container h2 {
+  font-size: 24px;
   margin-bottom: 20px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
 }
 
 .form-group {
   margin-bottom: 20px;
-  position: relative;
 }
 
 label {
+  display: block;
+  font-size: 16px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
-label .required {
-  color: #e32;
-  margin-left: 3px;
+input {
+  width: 100%;
+  padding: 10px;
+  border: none; /* Remove the border */
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+  background-color: transparent; /* Set the background to transparent */
+  font-size: 16px;
+  color: #fff; /* Set the text color to white */
+}
+
+textarea {
+  width: 100%;
+  height: 8rem;
+  padding: 10px;
+  border: none; /* Remove the border */
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+  background-color: transparent; /* Set the background to transparent */
+  font-size: 16px;
+  color: #fff; /* Set the text color to white */
+  resize: none;
 }
 
 input,
 textarea {
-  padding: 12px;
-  border: none;
-  border-bottom: 2px solid #ccc;
   width: 100%;
-  font-size: 18px;
-  background-color: transparent;
-  color: white;
-  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-input:focus,
-textarea:focus {
-  outline: none; /* Remove focus outline */
-  border-bottom: 2px solid #4CAF50; /* Green bottom line on focus */
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #888; /* More grey color for the hint text */
-}
-
-.feedback {
-  color: red; /* Make the feedback text appear in red */
-  font-size: 14px;
+/* Make first name and last name fields appear inline */
+.form-group .inline {
+  display: inline-block;
+  width: 48%; /* Adjust this value as needed */
 }
 
 .submit-button {
+  display: inline-block;
   background-color: #4CAF50;
-  color: white;
-  padding: 12px 24px; /* Slightly bigger padding */
+  color: #fff;
   border: none;
-  border-radius: 6px; /* Slightly bigger border radius */
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
-  font-size: 20px; /* Slightly bigger font size */
-  margin-top: 20px; /* Add margin top to separate from form fields */
-  align-self: center; /* Center the button within the form */
+  transition: background-color 0.3s ease;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.inline{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+.name{
+  margin-right: auto;
 }
 
 .submit-button:hover {
-  background-color: #45A049;
-}
-
-/* CSS to hide the required star by default */
-.hidden {
-  display: none;
+  background-color: #45a049;
 }
