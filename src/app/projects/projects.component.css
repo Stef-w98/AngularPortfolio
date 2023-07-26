@@ -156,3 +156,47 @@ h2 {
   }
 }
 
+@media (max-width: 767px) {
+  body {
+    margin-left: 0; /* Remove any default margin to ensure the content takes up the whole width */
+    padding: 0; /* Remove any default padding as well */
+  }
+
+  #projects {
+    padding: 0px;
+    margin: 0
+  }
+
+  .container {
+    max-width: 100%; /* Set the maximum width to occupy the full width of the screen */
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center; /* Center the project cards on smaller screens */
+  }
+
+  .column {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .project-card {
+    height: 220px; /* Increase the height of project cards for better display on mobile */
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the section heading on smaller screens */
+  }
+
+  .project-overlay h3 {
+    font-size: 22px; /* Increase the font size of project titles for better display on mobile */
+  }
+
+  /* Center the project cards on smaller screens */
+  .project-card {
+    margin: 0 auto;
+  }
+}
