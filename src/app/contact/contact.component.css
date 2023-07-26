@@ -168,6 +168,21 @@ textarea {
   content: "\f09b";
 }
 
+.work-in-progress-banner {
+  position: relative;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px; /* Increase the font size for a bigger banner */
+  text-align: center;
+  padding: 15px; /* Increase the padding for more space around the text */
+  transform: translateY(-50%) rotate(-45deg);
+  top: 45%;
+  right: -30px; /* Increase the right value to move the banner further to the right */
+  width: 400px; /* Increase the width for a bigger banner */
+  z-index: 1;
+}
+
 .submit-button:hover {
   background-color: #45a049;
 }
