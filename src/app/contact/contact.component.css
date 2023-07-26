@@ -20,10 +20,9 @@ body {
   display: flex;
   background-color: transparent;
   border-radius: 8px;
-  width: 140%;
+  width: 100%;
   padding: 20px;
   margin: 0 auto;
-  transform: translateX(-20%);
 }
 
 .contact-info {
@@ -126,7 +125,47 @@ textarea {
 }
 
 .name{
-  margin-right: auto;
+  margin-right: 4rem;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  color: #fff;
+  background-color: #4CAF50;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons a:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the Font Awesome icons */
+.fa {
+  font-size: inherit;
+}
+.fa-linkedin:before {
+  content: "\f08c";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-github:before {
+  content: "\f09b";
 }
 
 .submit-button:hover {
